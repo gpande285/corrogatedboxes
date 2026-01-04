@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yogeshwari Udyog - Corrugated Boxes Manufacturing</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .smooth-scroll {
+      scroll-behavior: smooth;
+    }
+    
+    .hero-gradient {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    }
+    
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    
+    .section-padding {
+      padding: 80px 20px;
+    }
+    
+    .hero-section {
+      position: relative;
+      overflow: hidden;
+      --hero-overlay-start: rgba(30, 58, 138, 0.85);
+      --hero-overlay-end: rgba(59, 130, 246, 0.85);
+    }
+    
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--hero-overlay-start), var(--hero-overlay-end));
+      z-index: 1;
+      pointer-events: none;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .hero-slider {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transform: scale(1.08);
+      transition: opacity 1.2s ease-in-out;
+      filter: blur(3px) brightness(0.75);
+    }
+    
+    .hero-slide.active {
+      opacity: 1;
+      filter: blur(0) brightness(2);
+    }
+    
+    @media (max-width: 768px) {
+      .section-padding {
+        padding: 50px 20px;
+      }
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="smooth-scroll"><!-- Navigation -->
+  <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300">
+   <div class="max-w-7xl mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+     <div class="flex items-center space-x-2">
+      <img src="images/logo.jpg" alt="Yogeshwari Udyog" class="w-15 h-11">
+      <div>
+       <h1 id="nav-company-name" class="text-xl font-bold">Yogeshwari Udyog</h1>
+       <p id="nav-tagline" class="text-xs">Corrugated Boxes Manufacturing</p>
+      </div>
+     </div>
+     <div class="hidden md:flex space-x-6"><a href="#home" class="hover:opacity-80 transition-opacity">Home</a> <a href="#about" class="hover:opacity-80 transition-opacity">About</a> <a href="#products" class="hover:opacity-80 transition-opacity">Products</a> <a href="#industries" class="hover:opacity-80 transition-opacity">Industries</a> <a href="#reviews" class="hover:opacity-80 transition-opacity">Reviews</a> <a href="#contact" class="hover:opacity-80 transition-opacity">Contact</a>
+     </div><button id="mobile-menu-btn" class="md:hidden p-2">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg></button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-3"><a href="#home" class="block hover:opacity-80 transition-opacity">Home</a> <a href="#about" class="block hover:opacity-80 transition-opacity">About</a> <a href="#products" class="block hover:opacity-80 transition-opacity">Products</a> <a href="#industries" class="block hover:opacity-80 transition-opacity">Industries</a> <a href="#reviews" class="block hover:opacity-80 transition-opacity">Reviews</a> <a href="#contact" class="block hover:opacity-80 transition-opacity">Contact</a>
+    </div>
+   </div>
+  </nav><!-- Hero Section -->
+ <section id="home" class="hero-gradient hero-section text-white pt-32 pb-20">
+  <div class="hero-slider" aria-hidden="true"></div>
+  <div class="hero-content">
+   <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 id="hero-title" class="text-5xl md:text-6xl font-bold mb-6">Welcome to Yogeshwari Udyog</h2>
+    <p id="hero-subtitle" class="text-xl md:text-2xl mb-4">Your Trusted Partner for Customized Corrugated Packaging</p>
+    <p class="text-lg mb-8 max-w-3xl mx-auto">High-quality corrugated boxes manufacturing in India. Pricing starting as low as ₹7. Durable, reliable, and fully customized packaging solutions for all industries.</p><a href="#contact" id="cta-button" class="inline-block px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105">Get a Quote</a>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto">
+     <div class="text-center">
+      <div class="text-4xl font-bold mb-2">
+       15+
+      </div>
+      <div class="text-sm opacity-90">
+       Years Experience
+      </div>
+     </div>
+     <div class="text-center">
+      <div class="text-4xl font-bold mb-2">
+       ₹7
+      </div>
+      <div class="text-sm opacity-90">
+       Starting Price
+      </div>
+     </div>
+     <div class="text-center">
+      <div class="text-4xl font-bold mb-2">
+       500+
+      </div>
+      <div class="text-sm opacity-90">
+       Happy Clients
+      </div>
+     </div>
+     <div class="text-center">
+      <div class="text-4xl font-bold mb-2">
+       100%
+      </div>
+      <div class="text-sm opacity-90">
+       Quality Assured
+      </div>
+     </div>
+    </div>
+  </div>
+   </div>
+  </section><!-- About Section -->
+  <section id="about" class="section-padding">
+   <div class="max-w-7xl mx-auto px-6">
+    <h2 id="about-title" class="text-4xl font-bold text-center mb-12">About Us</h2>
+    <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+     <div>
+      <h3 class="text-2xl font-bold mb-4">Who We Are</h3>
+      <p class="mb-4">Founded in 2021, Yogeshwari Udyog has quickly become a trusted name in the corrugated packaging industry. Backed by a management team with over 15 years of experience, we combine deep industry knowledge with modern manufacturing practices.</p>
+      <p class="mb-4">We specialize in creating custom corrugated boxes that deliver strength, durability, and cost-effectiveness. Our in-house design team ensures that every box is made with precision, keeping your products safe during storage and transit.</p>
+     </div>
+     <img src="images/image_people4.jpg" alt="About Us" class="w-full h-64 object-cover rounded-lg">
+    </div>
+    <div>
+     <h3 class="text-2xl font-bold text-center mb-8">Our Core Values</h3>
+     <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <div class="card-hover rounded-lg p-6 text-center">
+       <div class="text-4xl mb-3">
+        🎯
+       </div>
+       <h4 class="font-bold mb-2">Customization</h4>
+       <p class="text-sm">Boxes designed exactly as per client needs</p>
+      </div>
+      <div class="card-hover rounded-lg p-6 text-center">
+       <div class="text-4xl mb-3">
+        ⏰
+       </div>
+       <h4 class="font-bold mb-2">Punctual Delivery</h4>
+       <p class="text-sm">Strict timelines, hassle-free doorstep delivery</p>
+      </div>
+      <div class="card-hover rounded-lg p-6 text-center">
+       <div class="text-4xl mb-3">
+        😊
+       </div>
+       <h4 class="font-bold mb-2">Satisfaction</h4>
+       <p class="text-sm">Professional support and transparent services</p>
+      </div>
+      <div class="card-hover rounded-lg p-6 text-center">
+       <div class="text-4xl mb-3">
+        ✨
+       </div>
+       <h4 class="font-bold mb-2">Quality First</h4>
+       <p class="text-sm">High-strength materials, accurate die-cuts, and clean finishing</p>
+      </div>
+      <div class="card-hover rounded-lg p-6 text-center">
+       <div class="text-4xl mb-3">
+        💡
+       </div>
+       <h4 class="font-bold mb-2">Innovation</h4>
+       <p class="text-sm">Continuous improvement in design &amp; sustainability</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Products Section -->
+  <section id="products" class="section-padding">
+   <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-4">Our Products</h2>
+    <p class="text-center mb-12 text-lg">Corrugated Boxes &amp; Packaging Solutions</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="card-hover rounded-lg p-6 border-2">
+      <div class="text-3xl mb-3">
+       📦
+      </div>
+      <h3 class="text-xl font-bold mb-2">Customized Corrugated Boxes</h3>
+      <p class="text-sm">Tailored to your exact specifications and requirements</p>
+     </div>
+     <div class="card-hover rounded-lg p-6 border-2">
+      <div class="text-3xl mb-3">
+       🔷
+      </div>
+      <h3 class="text-xl font-bold mb-2">3-Ply, 5-Ply &amp; 7-Ply Boxes</h3>
+      <p class="text-sm">Multiple strength options for different load requirements</p>
+     </div>
+     <div class="card-hover rounded-lg p-6 border-2">
+      <div class="text-3xl mb-3">
+       ✂️
+      </div>
+      <h3 class="text-xl font-bold mb-2">Die-Cut Boxes</h3>
+      <p class="text-sm">Precision-cut custom shapes and designs</p>
+     </div>
+     <div class="card-hover rounded-lg p-6 border-2">
+      <div class="text-3xl mb-3">
+       🎨
+      </div>
+      <h3 class="text-xl font-bold mb-2">Printed Boxes</h3>
+      <p class="text-sm">Custom branding and graphics on your packaging</p>
+     </div>
+     <div class="card-hover rounded-lg p-6 border-2">
+      <div class="text-3xl mb-3">
+       🏗️
+      </div>
+      <h3 class="text-xl font-bold mb-2">Heavy-Duty Industrial Packaging</h3>
+      <p class="text-sm">Extra-strength solutions for heavy products</p>
+     </div>
+     <div class="card-hover rounded-lg p-6 border-2">
+      <div class="text-3xl mb-3">
+       🍎
+      </div>
+      <h3 class="text-xl font-bold mb-2">Food Grade Packaging</h3>
+      <p class="text-sm">Safe, hygienic packaging for food products</p>
+     </div>
+     <div class="card-hover rounded-lg p-6 border-2">
+      <div class="text-3xl mb-3">
+       💊
+      </div>
+      <h3 class="text-xl font-bold mb-2">Pharma Packaging Boxes</h3>
+      <p class="text-sm">Compliant packaging for pharmaceutical products</p>
+     </div>
+     <div class="card-hover rounded-lg p-6 border-2">
+      <div class="text-3xl mb-3">
+       🚗
+      </div>
+      <h3 class="text-xl font-bold mb-2">Automobile Parts Packaging</h3>
+      <p class="text-sm">Secure packaging for auto components</p>
+     </div>
+     <div class="card-hover rounded-lg p-6 border-2">
+      <div class="text-3xl mb-3">
+       💻
+      </div>
+      <h3 class="text-xl font-bold mb-2">Electronics Packaging</h3>
+      <p class="text-sm">Protected packaging for sensitive electronics</p>
+     </div>
+    </div>
+    <p class="text-center mt-8 text-lg">Each box is designed with longevity, load-bearing strength, and safety in mind.</p>
+   </div>
+  </section><!-- Industries Section -->
+  <section id="industries" class="section-padding">
+   <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-4">Industries We Serve</h2>
+    <p class="text-center mb-12 text-lg">We proudly cater to a wide range of industries</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+     <div class="text-center p-6 rounded-lg card-hover">
+      <div class="text-4xl mb-3">
+       🍕
+      </div>
+      <h3 class="font-bold">Food &amp; Beverage</h3>
+     </div>
+     <div class="text-center p-6 rounded-lg card-hover">
+      <div class="text-4xl mb-3">
+       💊
+      </div>
+      <h3 class="font-bold">Pharmaceutical</h3>
+     </div>
+     <div class="text-center p-6 rounded-lg card-hover">
+      <div class="text-4xl mb-3">
+       🚗
+      </div>
+      <h3 class="font-bold">Automobile</h3>
+     </div>
+     <div class="text-center p-6 rounded-lg card-hover">
+      <div class="text-4xl mb-3">
+       💻
+      </div>
+      <h3 class="font-bold">Electronics</h3>
+     </div>
+     <div class="text-center p-6 rounded-lg card-hover">
+      <div class="text-4xl mb-3">
+       🛒
+      </div>
+      <h3 class="font-bold">E-Commerce</h3>
+     </div>
+     <div class="text-center p-6 rounded-lg card-hover">
+      <div class="text-4xl mb-3">
+       ⚙️
+      </div>
+      <h3 class="font-bold">Industrial Machinery</h3>
+     </div>
+     <div class="text-center p-6 rounded-lg card-hover">
+      <div class="text-4xl mb-3">
+       🏠
+      </div>
+      <h3 class="font-bold">Household Goods</h3>
+     </div>
+     <div class="text-center p-6 rounded-lg card-hover">
+      <div class="text-4xl mb-3">
+       🌾
+      </div>
+      <h3 class="font-bold">Agriculture &amp; FMCG</h3>
+     </div>
+    </div>
+   </div>
+  </section><!-- Why Choose Us Section -->
+  <section id="why-choose" class="section-padding">
+   <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-4">Why Choose Us</h2>
+    <p class="text-center mb-12 text-lg">Quality That Speaks for Itself</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+     <div class="rounded-lg p-6 text-center card-hover">
+      <div class="text-5xl mb-4">
+       ✅
+      </div>
+      <h3 class="font-bold mb-2">Perfect Designs</h3>
+      <p class="text-sm">Accurate dimensions and superior build quality</p>
+     </div>
+     <div class="rounded-lg p-6 text-center card-hover">
+      <div class="text-5xl mb-4">
+       💪
+      </div>
+      <h3 class="font-bold mb-2">Durable &amp; Strong</h3>
+      <p class="text-sm">Built to protect your products</p>
+     </div>
+     <div class="rounded-lg p-6 text-center card-hover">
+      <div class="text-5xl mb-4">
+       💰
+      </div>
+      <h3 class="font-bold mb-2">Competitive Pricing</h3>
+      <p class="text-sm">Starting at just ₹7</p>
+     </div>
+     <div class="rounded-lg p-6 text-center card-hover">
+      <div class="text-5xl mb-4">
+       🚚
+      </div>
+      <h3 class="font-bold mb-2">Punctual Delivery</h3>
+      <p class="text-sm">Doorstep delivery across regions</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- Customer Reviews Section -->
+  <section id="reviews" class="section-padding">
+   <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-4">Customer Reviews</h2>
+    <p class="text-center mb-12 text-lg">What Our Clients Say About Us</p>
+    <div class="grid md:grid-cols-3 gap-8">
+     <div class="rounded-lg p-6 card-hover">
+      <div class="flex mb-4"><span class="text-2xl">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p class="mb-4 italic">"Excellent quality boxes at unbeatable prices. We've been using Yogeshwari Udyog for our e-commerce business for over a year now. The boxes are sturdy and the delivery is always on time. Highly recommended!"</p>
+      <div class="flex items-center">
+       <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mr-3">
+        RK
+       </div>
+       <div>
+        <div class="font-bold">
+         Rajesh Kumar
+        </div>
+        <div class="text-sm opacity-75">
+         E-Commerce Business Owner
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="rounded-lg p-6 card-hover">
+      <div class="flex mb-4"><span class="text-2xl">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p class="mb-4 italic">"Professional team with great customer service. They understood our specific requirements for pharmaceutical packaging and delivered exactly what we needed. The customization options are fantastic!"</p>
+      <div class="flex items-center">
+       <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mr-3">
+        PS
+       </div>
+       <div>
+        <div class="font-bold">
+         Priya Sharma
+        </div>
+        <div class="text-sm opacity-75">
+         Pharma Company Manager
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="rounded-lg p-6 card-hover">
+      <div class="flex mb-4"><span class="text-2xl">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p class="mb-4 italic">"We needed heavy-duty packaging for our automobile parts and Yogeshwari Udyog exceeded our expectations. The 7-ply boxes are incredibly strong and the pricing is very competitive. Will definitely continue working with them."</p>
+      <div class="flex items-center">
+       <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mr-3">
+        AM
+       </div>
+       <div>
+        <div class="font-bold">
+         Amit Mehta
+        </div>
+        <div class="text-sm opacity-75">
+         Auto Parts Supplier
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="rounded-lg p-6 card-hover">
+      <div class="flex mb-4"><span class="text-2xl">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p class="mb-4 italic">"Best corrugated box manufacturer we've worked with. The quality is consistent, prices are fair, and they never miss a deadline. Their support team is also very helpful and responsive."</p>
+      <div class="flex items-center">
+       <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mr-3">
+        SG
+       </div>
+       <div>
+        <div class="font-bold">
+         Sneha Gupta
+        </div>
+        <div class="text-sm opacity-75">
+         FMCG Distributor
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="rounded-lg p-6 card-hover">
+      <div class="flex mb-4"><span class="text-2xl">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p class="mb-4 italic">"Impressed with their customization capabilities. We needed printed boxes with our brand logo and they delivered perfect results. The printing quality is top-notch and colors are vibrant."</p>
+      <div class="flex items-center">
+       <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mr-3">
+        VT
+       </div>
+       <div>
+        <div class="font-bold">
+         Vikram Thakur
+        </div>
+        <div class="text-sm opacity-75">
+         Food Business Owner
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="rounded-lg p-6 card-hover">
+      <div class="flex mb-4"><span class="text-2xl">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p class="mb-4 italic">"Reliable partner for our packaging needs. From small orders to bulk manufacturing, they handle everything professionally. The doorstep delivery across India is a huge plus for our multi-location business."</p>
+      <div class="flex items-center">
+       <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mr-3">
+        NK
+       </div>
+       <div>
+        <div class="font-bold">
+         Neha Kapoor
+        </div>
+        <div class="text-sm opacity-75">
+         Electronics Retailer
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Customization Services -->
+  <section id="customization" class="section-padding">
+   <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-4">Customization Services</h2>
+    <p class="text-center mb-12 text-lg">We understand that every business has unique packaging needs</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+     <div class="text-center p-6">
+      <div class="text-4xl mb-3">
+       📏
+      </div>
+      <h3 class="font-bold mb-2">Box Size Customization</h3>
+      <p class="text-sm">Any dimensions you need</p>
+     </div>
+     <div class="text-center p-6">
+      <div class="text-4xl mb-3">
+       🔨
+      </div>
+      <h3 class="font-bold mb-2">Ply &amp; Material Selection</h3>
+      <p class="text-sm">Choose the right strength</p>
+     </div>
+     <div class="text-center p-6">
+      <div class="text-4xl mb-3">
+       🎨
+      </div>
+      <h3 class="font-bold mb-2">Printing &amp; Branding</h3>
+      <p class="text-sm">Custom graphics and logos</p>
+     </div>
+     <div class="text-center p-6">
+      <div class="text-4xl mb-3">
+       ✂️
+      </div>
+      <h3 class="font-bold mb-2">Die-Cut Shapes</h3>
+      <p class="text-sm">Unique custom designs</p>
+     </div>
+     <div class="text-center p-6">
+      <div class="text-4xl mb-3">
+       🧪
+      </div>
+      <h3 class="font-bold mb-2">Sample Prototyping</h3>
+      <p class="text-sm">Test before bulk order</p>
+     </div>
+     <div class="text-center p-6">
+      <div class="text-4xl mb-3">
+       📦
+      </div>
+      <h3 class="font-bold mb-2">Bulk Manufacturing</h3>
+      <p class="text-sm">Large quantity production</p>
+     </div>
+     <div class="text-center p-6">
+      <div class="text-4xl mb-3">
+       ⚡
+      </div>
+      <h3 class="font-bold mb-2">Urgent Order Handling</h3>
+      <p class="text-sm">Rush delivery available</p>
+     </div>
+     <div class="text-center p-6">
+      <div class="text-4xl mb-3">
+       🤝
+      </div>
+      <h3 class="font-bold mb-2">Expert Consultation</h3>
+      <p class="text-sm">Guidance from our team</p>
+     </div>
+    </div>
+    <p class="text-center mt-8 text-lg font-semibold">Just share your requirement — and our team will create the perfect packaging solution.</p>
+   </div>
+  </section><!-- Contact Section -->
+  <section id="contact" class="section-padding">
+   <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-4">Contact Us</h2>
+    <p class="text-center mb-12 text-lg">Get in touch for customized packaging solutions</p>
+    <div class="rounded-lg p-8">
+     <div class="space-y-6">
+      <div class="flex items-start">
+       <div class="text-3xl mr-4">
+        📍
+       </div>
+       <div>
+        <h3 class="font-bold mb-1">Location</h3>
+        <p id="contact-address">Paale Gaon, Devicha Pada, <br> Taloja MIDC, Panvel</p>
+       </div>
+      </div>
+      <div class="flex items-start">
+       <div class="text-3xl mr-4">
+        📞
+       </div>
+       <div>
+        <h3 class="font-bold mb-1">Phone</h3>
+        <p id="contact-phone"><a href="tel">9920302700</a>nbsp;<a href="tel">9920302900</a></p>
+       </div>
+      </div>
+      <div class="flex items-start">
+       <div class="text-3xl mr-4">
+        📧
+       </div>
+       <div>
+        <h3 class="font-bold mb-1">Email</h3>
+        <p id="contact-email">yogeshwaripackaging@gmail.com</p>
+       </div>
+      </div>
+     </div>
+     <div class="mt-8 pt-8 border-t-2">
+      <h3 class="font-bold mb-4 text-center">Send Us a Message</h3>
+      <form id="contact-form" class="space-y-4">
+       <div><label for="name" class="block font-semibold mb-2">Name</label> <input type="text" id="name" name="name" required class="w-full px-4 py-2 border-2 rounded-lg focus:outline-none focus:ring-2">
+       </div>
+       <div><label for="email" class="block font-semibold mb-2">Email</label> <input type="email" id="email" name="email" required class="w-full px-4 py-2 border-2 rounded-lg focus:outline-none focus:ring-2">
+       </div>
+       <div><label for="phone-input" class="block font-semibold mb-2">Phone</label> <input type="tel" id="phone-input" name="phone" class="w-full px-4 py-2 border-2 rounded-lg focus:outline-none focus:ring-2">
+       </div>
+       <div><label for="message" class="block font-semibold mb-2">Message</label> <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border-2 rounded-lg focus:outline-none focus:ring-2"></textarea>
+       </div><button type="submit" id="submit-btn" class="w-full py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105">Send Message</button>
+      </form>
+      <div id="form-message" class="mt-4 text-center font-semibold hidden"></div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Footer -->
+  <footer class="py-8 text-center">
+   <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center justify-center space-x-2 mb-4">
+     <svg class="w-8 h-8" viewbox="0 0 50 50" fill="none"><rect x="5" y="5" width="40" height="40" rx="4" stroke="currentColor" stroke-width="2" /> <path d="M15 15 L35 15 L35 35 L15 35 Z" stroke="currentColor" stroke-width="2" fill="none" />
+     </svg>
+     <h3 class="text-xl font-bold">Yogeshwari Udyog</h3>
+    </div>
+    <p class="mb-4">Customized Corrugated Packaging Manufacturer</p>
+    <p class="text-sm opacity-75">© 2024 Yogeshwari Udyog. All rights reserved.</p>
+    <p class="text-sm mt-2 opacity-75">Quality. Precision. Timely Delivery. Complete Customer Satisfaction.</p>
+   </div>
+  </footer>
+  <script>
+    const defaultConfig = {
+      background_color: "#f8fafc",
+      primary_color: "#1e3a8a",
+      secondary_color: "#ffffff",
+      text_color: "#1e293b",
+      accent_color: "#3b82f6",
+      font_family: "system-ui",
+      font_size: 16,
+      company_name: "Yogeshwari Udyog",
+      tagline: "Corrugated Boxes Manufacturing",
+      hero_title: "Welcome to Yogeshwari Udyog",
+      hero_subtitle: "Your Trusted Partner for Customized Corrugated Packaging",
+      cta_button: "Get a Quote",
+      about_title: "About Us",
+      contact_address: "(Add Address Here)",
+      contact_phone: "(Add Contact Number)",
+      contact_email: "(Add Email Address)"
+    };
+
+    const config = { ...defaultConfig };
+
+    const heroSliderImages = [
+      'images/image2.jpg',
+      'images/image_people4.jpg',
+      'images/image_industry.jpg'
+    ];
+
+    function initHeroSlider() {
+      const sliderEl = document.querySelector('.hero-slider');
+      if (!sliderEl) {
+        return;
+      }
+
+      heroSliderImages.forEach((src, index) => {
+        const slide = document.createElement('div');
+        slide.className = 'hero-slide';
+        slide.style.backgroundImage = `url('${src}')`;
+        if (index === 0) {
+          slide.classList.add('active');
+        }
+        sliderEl.appendChild(slide);
+      });
+
+      const slides = sliderEl.querySelectorAll('.hero-slide');
+      if (slides.length <= 1) {
+        return;
+      }
+
+      let currentSlide = 0;
+      setInterval(() => {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+      }, 6000);
+    }
+
+    function hexToRgba(hex, alpha = 1) {
+      if (!hex) {
+        return `rgba(0, 0, 0, ${alpha})`;
+      }
+
+      let sanitized = hex.replace('#', '');
+      if (sanitized.length === 3) {
+        sanitized = sanitized.split('').map(ch => ch + ch).join('');
+      }
+
+      const bigint = parseInt(sanitized, 16);
+      if (Number.isNaN(bigint)) {
+        return `rgba(0, 0, 0, ${alpha})`;
+      }
+
+      const r = (bigint >> 16) & 255;
+      const g = (bigint >> 8) & 255;
+      const b = bigint & 255;
+      return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+    }
+
+    async function onConfigChange(newConfig) {
+      const baseFont = newConfig.font_family || defaultConfig.font_family;
+      const baseFontStack = `${baseFont}, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif`;
+      const baseSize = newConfig.font_size || defaultConfig.font_size;
+      
+      document.body.style.fontFamily = baseFontStack;
+      document.body.style.fontSize = `${baseSize}px`;
+      document.body.style.backgroundColor = newConfig.background_color || defaultConfig.background_color;
+      document.body.style.color = newConfig.text_color || defaultConfig.text_color;
+      
+      const navbar = document.getElementById('navbar');
+      navbar.style.backgroundColor = newConfig.secondary_color || defaultConfig.secondary_color;
+      navbar.style.color = newConfig.text_color || defaultConfig.text_color;
+      navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+      
+      const navLinks = navbar.querySelectorAll('a');
+      navLinks.forEach(link => {
+        link.style.color = newConfig.text_color || defaultConfig.text_color;
+      });
+      
+      const navSvg = navbar.querySelector('svg');
+      navSvg.style.color = newConfig.primary_color || defaultConfig.primary_color;
+      
+      document.getElementById('nav-company-name').textContent = newConfig.company_name || defaultConfig.company_name;
+      document.getElementById('nav-company-name').style.color = newConfig.primary_color || defaultConfig.primary_color;
+      document.getElementById('nav-company-name').style.fontSize = `${baseSize * 1.25}px`;
+      
+      document.getElementById('nav-tagline').textContent = newConfig.tagline || defaultConfig.tagline;
+      document.getElementById('nav-tagline').style.fontSize = `${baseSize * 0.75}px`;
+      
+      const heroSection = document.querySelector('.hero-gradient');
+      heroSection.style.background = `linear-gradient(135deg, ${newConfig.primary_color || defaultConfig.primary_color} 0%, ${newConfig.accent_color || defaultConfig.accent_color} 100%)`;
+      heroSection.style.setProperty('--hero-overlay-start', hexToRgba(newConfig.primary_color || defaultConfig.primary_color, 0.82));
+      heroSection.style.setProperty('--hero-overlay-end', hexToRgba(newConfig.accent_color || defaultConfig.accent_color, 0.82));
+      
+      document.getElementById('hero-title').textContent = newConfig.hero_title || defaultConfig.hero_title;
+      document.getElementById('hero-title').style.fontSize = `${baseSize * 3}px`;
+      
+      document.getElementById('hero-subtitle').textContent = newConfig.hero_subtitle || defaultConfig.hero_subtitle;
+      document.getElementById('hero-subtitle').style.fontSize = `${baseSize * 1.5}px`;
+      
+      const ctaButton = document.getElementById('cta-button');
+      ctaButton.textContent = newConfig.cta_button || defaultConfig.cta_button;
+      ctaButton.style.backgroundColor = newConfig.secondary_color || defaultConfig.secondary_color;
+      ctaButton.style.color = newConfig.primary_color || defaultConfig.primary_color;
+      ctaButton.style.fontSize = `${baseSize * 1.125}px`;
+      
+      document.getElementById('about-title').textContent = newConfig.about_title || defaultConfig.about_title;
+      document.getElementById('about-title').style.fontSize = `${baseSize * 2}px`;
+      
+      const sectionTitles = document.querySelectorAll('section h2');
+      sectionTitles.forEach(title => {
+        title.style.color = newConfig.primary_color || defaultConfig.primary_color;
+        title.style.fontSize = `${baseSize * 2}px`;
+      });
+      
+      const cards = document.querySelectorAll('.card-hover');
+      cards.forEach(card => {
+        card.style.backgroundColor = newConfig.secondary_color || defaultConfig.secondary_color;
+        card.style.borderColor = newConfig.accent_color || defaultConfig.accent_color;
+      });
+      
+      const reviewCards = document.querySelectorAll('#reviews .card-hover');
+      reviewCards.forEach(card => {
+        card.style.backgroundColor = newConfig.secondary_color || defaultConfig.secondary_color;
+        card.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+        const avatar = card.querySelector('div[class*="rounded-full"]');
+        if (avatar) {
+          avatar.style.backgroundColor = newConfig.accent_color || defaultConfig.accent_color;
+          avatar.style.color = newConfig.secondary_color || defaultConfig.secondary_color;
+        }
+      });
+      
+      document.getElementById('contact-address').textContent = newConfig.contact_address || defaultConfig.contact_address;
+      document.getElementById('contact-phone').textContent = newConfig.contact_phone || defaultConfig.contact_phone;
+      document.getElementById('contact-email').textContent = newConfig.contact_email || defaultConfig.contact_email;
+      
+      const contactSection = document.querySelector('#contact > div > div');
+      contactSection.style.backgroundColor = newConfig.secondary_color || defaultConfig.secondary_color;
+      contactSection.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+      
+      const inputs = document.querySelectorAll('input, textarea');
+      inputs.forEach(input => {
+        input.style.borderColor = newConfig.accent_color || defaultConfig.accent_color;
+      });
+      
+      const submitBtn = document.getElementById('submit-btn');
+      submitBtn.style.backgroundColor = newConfig.primary_color || defaultConfig.primary_color;
+      submitBtn.style.color = newConfig.secondary_color || defaultConfig.secondary_color;
+      
+      const footer = document.querySelector('footer');
+      footer.style.backgroundColor = newConfig.primary_color || defaultConfig.primary_color;
+      footer.style.color = newConfig.secondary_color || defaultConfig.secondary_color;
+      
+      const footerSvg = footer.querySelector('svg');
+      footerSvg.style.color = newConfig.secondary_color || defaultConfig.secondary_color;
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => {
+              config.background_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ background_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.secondary_color || defaultConfig.secondary_color,
+            set: (value) => {
+              config.secondary_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ secondary_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => {
+              config.text_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ text_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.primary_color || defaultConfig.primary_color,
+            set: (value) => {
+              config.primary_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ primary_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.accent_color || defaultConfig.accent_color,
+            set: (value) => {
+              config.accent_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ accent_color: value });
+              }
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (value) => {
+            config.font_family = value;
+            if (window.elementSdk) {
+              window.elementSdk.setConfig({ font_family: value });
+            }
+          }
+        },
+        fontSizeable: {
+          get: () => config.font_size || defaultConfig.font_size,
+          set: (value) => {
+            config.font_size = value;
+            if (window.elementSdk) {
+              window.elementSdk.setConfig({ font_size: value });
+            }
+          }
+        }
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ["company_name", config.company_name || defaultConfig.company_name],
+        ["tagline", config.tagline || defaultConfig.tagline],
+        ["hero_title", config.hero_title || defaultConfig.hero_title],
+        ["hero_subtitle", config.hero_subtitle || defaultConfig.hero_subtitle],
+        ["cta_button", config.cta_button || defaultConfig.cta_button],
+        ["about_title", config.about_title || defaultConfig.about_title],
+        ["contact_address", config.contact_address || defaultConfig.contact_address],
+        ["contact_phone", config.contact_phone || defaultConfig.contact_phone],
+        ["contact_email", config.contact_email || defaultConfig.contact_email]
+      ]);
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+
+    initHeroSlider();
+
+    document.getElementById('mobile-menu-btn').addEventListener('click', function(e) {
+      e.preventDefault();
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const submitBtn = document.getElementById('submit-btn');
+      const formMessage = document.getElementById('form-message');
+      const originalBtnText = submitBtn.textContent;
+      
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+      
+      setTimeout(() => {
+        formMessage.textContent = 'Thank you for your message! We will get back to you soon.';
+        formMessage.style.color = config.primary_color || defaultConfig.primary_color;
+        formMessage.classList.remove('hidden');
+        
+        document.getElementById('contact-form').reset();
+        
+        submitBtn.textContent = originalBtnText;
+        submitBtn.disabled = false;
+        
+        setTimeout(() => {
+          formMessage.classList.add('hidden');
+        }, 5000);
+      }, 1000);
+    });
+
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+      } else {
+        navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+      }
+    });
+
+    onConfigChange(config);
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a112e3b72d98ee8',t:'MTc2MzU3MDc1NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>
+
